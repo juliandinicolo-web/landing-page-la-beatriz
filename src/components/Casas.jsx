@@ -7,7 +7,7 @@ const CABANAS = [
     title: 'Casa de Montaña 1',
     desc: 'Construida en hormigón visto con acabados de diseño, esta casa combina la solidez de la piedra con la calidez de sus interiores. Techos de vigas de madera expuestas, pisos de cemento alisado y decoración cuidada crean un ambiente único e irrepetible.',
     amenities: ['Hasta 5 personas', '2 baños completos', 'WiFi Starlink', 'Smart TV en living y dormitorio', 'Parrilla & fogón privado', 'Cocina totalmente equipada', 'Living-comedor integrado', 'Hormigón visto + vigas de madera'],
-    video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.MP4',
+    video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.gif',
     fotos: [
       { src: import.meta.env.BASE_URL + 'fotos_generales/foto_patio_trasero_1_2.png', alt: 'Patio' },
       { src: import.meta.env.BASE_URL + 'cabana_1/living cabana_1.jpg', alt: 'Living' },
@@ -25,7 +25,7 @@ const CABANAS = [
     reverse: true,
     desc: 'Espacios amplios bañados de luz natural a través de grandes ventanales. El diseño industrial elegante fusiona hormigón, madera y metal para crear un refugio de montaña contemporáneo y sofisticado, pensado para el máximo confort.',
     amenities: ['Hasta 5 personas', '2 baños completos', 'WiFi Starlink', 'Smart TV en living y dormitorio', 'Parrilla & fogón privado', 'Ambientes amplios con luz natural', 'Diseño industrial moderno', 'Vista a la montaña'],
-    video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.MP4',
+    video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.gif',
     fotos: [
       { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112259.jpg', alt: 'Living' },
       { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112342.jpg', alt: 'Comedor' },
@@ -40,7 +40,7 @@ const CABANAS = [
     title: 'Casa de Montaña 3',
     desc: 'La tercera propuesta arquitectónica del complejo. Misma filosofía de diseño: solidez, confort y estética contemporánea. Perfecta para grupos familiares o de amigos que buscan privacidad y exclusividad en la montaña.',
     amenities: ['Hasta 5 personas', '2 baños completos', 'WiFi Starlink', 'Smart TV en living y dormitorio', 'Parrilla & fogón privado', 'Privacidad total garantizada', 'Acceso independiente', '2 hectáreas compartidas'],
-    video: import.meta.env.BASE_URL + 'video_cabana_3/video_cabana_3.MP4',
+    video: import.meta.env.BASE_URL + 'video_cabana_3/video_cabana_3.gif',
     fotos: [
       { src: import.meta.env.BASE_URL + 'cabana_3/cabana_3 frente.jpg', alt: 'Frente' },
       { src: import.meta.env.BASE_URL + 'cabana_3/living cabana_3.jpg', alt: 'Living' },
@@ -81,9 +81,7 @@ function CasaBlock({ casa }) {
       </div>
       <div className="casa-video-wrap">
         <div className="casa-video-label">&#127916; Video — {casa.title}</div>
-        <video className="casa-video" controls muted preload="metadata" playsInline>
-          <source src={casa.video} type="video/mp4" />
-        </video>
+        <img className="casa-video" src={casa.video} alt={casa.title} />
       </div>
     </div>
   )

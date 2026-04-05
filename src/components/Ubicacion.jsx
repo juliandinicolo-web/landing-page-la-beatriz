@@ -12,9 +12,7 @@ export default function Ubicacion() {
           <div className="ruta-video-banner">
             <span className="ruta-badge">&#x1F6E3;&#xFE0F; RUTA NACIONAL 7 KM 1141,5</span>
           </div>
-          <video className="ruta-video" autoPlay muted loop playsInline preload="metadata">
-            <source src={import.meta.env.BASE_URL + "video_panoramico/ruta_nacional_7.MP4"} type="video/mp4" />
-          </video>
+          <img className="ruta-video" src={import.meta.env.BASE_URL + "video_panoramico/ruta_nacional_7.gif"} alt="Ruta Nacional 7" />
           <iframe
             id="mapa-labeatriz"
             title="Ubicación La Beatriz Casas de Montaña"

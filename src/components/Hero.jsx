@@ -25,9 +25,7 @@ export default function Hero() {
     <section id="hero">
       <div className="hero-media">
         {/* Video panorámico — playsInline es clave para iOS */}
-        <video className="hero-video-bg" autoPlay muted loop playsInline preload="auto">
-          <source src={import.meta.env.BASE_URL + "video_panoramico/video_panoramico.MP4"} type="video/mp4" />
-        </video>
+        <img className="hero-video-bg" src={import.meta.env.BASE_URL + "video_panoramico/video_panoramico.gif"} alt="Background Panoramico" />
         <div className="hero-slides">
           {SLIDES.map((src, i) => (
             <div key={i}
