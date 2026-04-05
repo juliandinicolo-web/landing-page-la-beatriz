@@ -61,21 +61,21 @@ img { display: block; max-width: 100%; object-fit: cover; }
 .nav-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   background: rgba(0,0,0,0.55);
   backdrop-filter: blur(14px);
   border-right: 1px solid rgba(255,255,255,.1);
-  padding: 10px 28px;
-  min-width: 22vw;
-  max-width: 26vw;
+  padding: 10px;
+  width: 25vw;
+  height: 20vh;
   flex-shrink: 0;
   transition: background .3s;
 }
 .nav-logo:hover { background: rgba(0,0,0,0.7); }
 .nav-logo img {
   width: 100%;
-  height: auto;
-  max-height: 100%;
+  height: 100%;
   object-fit: contain;
   display: block;
 }

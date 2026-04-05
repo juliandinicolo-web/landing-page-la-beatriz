@@ -2,13 +2,13 @@ export default function Verano() {
   const DESTINOS = [
     {
       url: 'https://www.google.com/maps/place/Parque+Provincial+Aconcagua/@-32.65,-70.0,12z',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Aconcagua_from_south_with_normal_route.jpg/600px-Aconcagua_from_south_with_normal_route.jpg',
+      img: import.meta.env.BASE_URL + 'maps_photos/aconcagua_summer_google_maps_1775421007127.png',
       title: 'Parque Aconcagua',
       desc: 'El techo de América. Trekking de alta montaña y vistas al pico más alto del hemisferio occidental (6.962 m).'
     },
     {
       url: 'https://www.google.com/maps/place/Puente+del+Inca/@-32.8244,-69.9217,15z',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Puente_del_Inca.JPG/600px-Puente_del_Inca.JPG',
+      img: import.meta.env.BASE_URL + 'maps_photos/puente_del_inca_summer_google_maps_sidebar_1775421066510.png',
       fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Puente_del_inca_2.jpg/600px-Puente_del_inca_2.jpg',
       title: 'Puente del Inca',
       desc: 'Formación natural única declarada monumento histórico. Un puente de roca natural sobre el río Las Cuevas.'
@@ -36,7 +36,7 @@ export default function Verano() {
     },
     {
       url: 'https://www.google.com/maps/place/Uspallata/@-32.5927,-69.3445,14z',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Uspallata_valley.jpg/600px-Uspallata_valley.jpg',
+      img: import.meta.env.BASE_URL + 'maps_photos/uspallata_summer_google_maps_sidebar_1775421138694.png',
       fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Rio_Mendoza_rafting.jpg/600px-Rio_Mendoza_rafting.jpg',
       title: 'Rapel & Rafting — Uspallata',
       desc: 'Adrenalina pura con empresas locales de Uspallata. Descenso en bote por el río Mendoza y rappel en paredes de montaña.'
@@ -44,10 +44,10 @@ export default function Verano() {
   ]
 
   const GALS = [
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Aconcagua_from_south_with_normal_route.jpg/800px-Aconcagua_from_south_with_normal_route.jpg', alt: 'Aconcagua verano' },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Puente_del_Inca.JPG/800px-Puente_del_Inca.JPG', alt: 'Puente del Inca', fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Puente_del_inca_2.jpg/800px-Puente_del_inca_2.jpg' },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Embalse_Potrerillos.jpg/800px-Embalse_Potrerillos.jpg', alt: 'Embalse Potrerillos', fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hotel_Villavicencio_01.jpg/800px-Hotel_Villavicencio_01.jpg' },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cristo_Redentor_BW.jpg/800px-Cristo_Redentor_BW.jpg', alt: 'Cristo Redentor', fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cristo_Redentor_de_los_Andes.jpg/800px-Cristo_Redentor_de_los_Andes.jpg' },
+    { src: import.meta.env.BASE_URL + 'maps_photos/aconcagua_summer_google_maps_1775421007127.png', alt: 'Aconcagua verano' },
+    { src: import.meta.env.BASE_URL + 'maps_photos/puente_del_inca_summer_google_maps_sidebar_1775421066510.png', alt: 'Puente del Inca', fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Puente_del_inca_2.jpg/800px-Puente_del_inca_2.jpg' },
+    { src: import.meta.env.BASE_URL + 'maps_photos/uspallata_summer_google_maps_sidebar_1775421138694.png', alt: 'Uspallata' },
+    { src: import.meta.env.BASE_URL + 'maps_photos/google_maps_photos_1775420718454.webp', alt: 'Mapa general fotos' },
   ]
 
   return (
