@@ -42,7 +42,7 @@ export default function Hero() {
         </div>
         <h1 className="hero-title">La Beatriz<br/><span>Casas de Montaña</span></h1>
         <p className="hero-slogan" style={{ color:'rgba(255,255,255,0.9)', fontStyle:'normal', letterSpacing:'0.05em' }}>
-          Donde el lujo se encuentra con la grandeza de los Andes
+          Donde el diseño se encuentra con la grandeza de los Andes
         </p>
         <div className="hero-badges">
           <div className="hero-badge"><span className="badge-num">3</span><span className="badge-label">Casas</span></div>

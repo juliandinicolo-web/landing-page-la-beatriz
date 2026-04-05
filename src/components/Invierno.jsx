@@ -10,7 +10,7 @@ export default function Invierno() {
     },
     {
       url: 'https://www.google.com/maps/place/Los+Puquios/@-32.86,-69.72,13z',
-      img: import.meta.env.BASE_URL + 'maps_photos/penitentes_summer_google_maps_1775420831460.png',
+      img: import.meta.env.BASE_URL + 'maps_photos/los_puquios_winter.png',
       alt: 'Los Puquios parque de nieve Uspallata',
       fallback: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Cordillera_nieve_mendoza.jpg/640px-Cordillera_nieve_mendoza.jpg',
       icon: '🏔️', title: 'Los Puquios',

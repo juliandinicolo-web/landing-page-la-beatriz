@@ -319,13 +319,17 @@ img { display: block; max-width: 100%; object-fit: cover; }
 
 /* ===== CASA VIDEO (full-width bajo galería+info) ===== */
 .casa-video-wrap {
+  margin-top: 40px;
   grid-column: 1 / -1;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
   background: #000;
-  box-shadow: var(--shadow-lg);
-  margin-top: 16px;
+  border-radius: var(--radius);
+  overflow: hidden;
   position: relative;
+}
+.casa-video-wrap.shared-video {
+  margin: 60px 0;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 .casa-video-label {
   background: var(--clr-dark);
@@ -426,9 +430,18 @@ img { display: block; max-width: 100%; object-fit: cover; }
   box-shadow: var(--shadow-lg);
 }
 .gallery-main-img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: transform .6s ease;
+  transition: transform .6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity .5s ease;
+  display: block;
+}
+.gallery-main-img.fade-in {
+  animation: fadeInImg .5s ease-out;
+}
+@keyframes fadeInImg {
+  from { opacity: 0.2; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
 }
 .casa-gallery-main:hover .gallery-main-img { transform: scale(1.03); }
 .casa-gallery-thumbs {

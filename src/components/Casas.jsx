@@ -10,10 +10,10 @@ const CABANAS = [
     video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.gif',
     fotos: [
       { src: import.meta.env.BASE_URL + 'fotos_generales/foto_patio_trasero_1_2.png', alt: 'Patio' },
-      { src: import.meta.env.BASE_URL + 'cabana_1/living cabana_1.jpg', alt: 'Living' },
-      { src: import.meta.env.BASE_URL + 'cabana_1/living sofa con vista verde cabana_1.jpg', alt: 'Sofa' },
       { src: import.meta.env.BASE_URL + 'cabana_1/comedor diario cabana_1.jpg', alt: 'Comedor' },
       { src: import.meta.env.BASE_URL + 'cabana_1/dormitorio cabana_1.jpg', alt: 'Dormitorio' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/living cabana_1.jpg', alt: 'Living' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/living sofa con vista verde cabana_1.jpg', alt: 'Sofa' },
       { src: import.meta.env.BASE_URL + 'cabana_1/bano_completo.jpg', alt: 'Baño' },
       { src: import.meta.env.BASE_URL + 'cabana_1/bano_espejo.jpg', alt: 'Baño Espejo' },
       { src: import.meta.env.BASE_URL + 'cabana_1/terraza con parrilla y fogon cabana_1.jpg', alt: 'Terraza' }
@@ -43,9 +43,11 @@ const CABANAS = [
     video: import.meta.env.BASE_URL + 'video_cabana_3/video_cabana_3.gif',
     fotos: [
       { src: import.meta.env.BASE_URL + 'cabana_3/cabana_3 frente.jpg', alt: 'Frente' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/ventana del living vista a verde cabana_3.jpg', alt: 'Vista Verde' },
       { src: import.meta.env.BASE_URL + 'cabana_3/living cabana_3.jpg', alt: 'Living' },
       { src: import.meta.env.BASE_URL + 'cabana_3/living sillon y tele cabana_3.jpg', alt: 'Living Sillón' },
       { src: import.meta.env.BASE_URL + 'cabana_3/comedor amplio cabana_3.jpg', alt: 'Comedor' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/parrilla cabana_3.jpg', alt: 'Parrilla' },
       { src: import.meta.env.BASE_URL + 'cabana_3/dormitorio cabana_3.jpg', alt: 'Dormitorio' },
       { src: import.meta.env.BASE_URL + 'cabana_3/bano_ducha_espejo_cabana_3.jpg', alt: 'Baño' },
       { src: import.meta.env.BASE_URL + 'cabana_3/parque y parrilla cabana_3.jpg', alt: 'Parque' }
@@ -59,8 +61,8 @@ function CasaBlock({ casa }) {
   return (
     <div className={`casa-block${casa.reverse ? ' reverse' : ''}`}>
       <div className="casa-gallery">
-        <div className="casa-gallery-main" style={{ transition: 'opacity .2s' }}>
-          <img src={main} alt={casa.title} className="gallery-main-img" />
+        <div className="casa-gallery-main" style={{ overflow: 'hidden' }}>
+          <img key={main} src={main} alt={casa.title} className="gallery-main-img fade-in" />
         </div>
         <div className="casa-gallery-thumbs">
           {casa.fotos.map((f, i) => (
@@ -79,10 +81,6 @@ function CasaBlock({ casa }) {
         </ul>
         <a href="#contacto" className="btn-secondary">Consultar esta casa</a>
       </div>
-      <div className="casa-video-wrap">
-        <div className="casa-video-label">&#127916; Video — {casa.title}</div>
-        <img className="casa-video" src={casa.video} alt={casa.title} />
-      </div>
     </div>
   )
 }
@@ -95,7 +93,26 @@ export default function Casas() {
         <h2>Tres Casas, Una Experiencia Única</h2>
         <p>Cada casa fue diseñada con materiales nobles — hormigón visto, vigas de madera y joinery de diseño — para ofrecer confort de primer nivel en pleno contacto con la naturaleza andina.</p>
       </div>
-      {CABANAS.map(c => <CasaBlock key={c.id} casa={c} />)}
+      <div className="casas-list">
+        {/* Cabina 1 */}
+        <CasaBlock casa={CABANAS[0]} />
+        
+        {/* Cabina 2 */}
+        <CasaBlock casa={CABANAS[1]} />
+
+        {/* Video Compartido 1 y 2 */}
+        <div className="casa-video-wrap shared-video">
+          <div className="casa-video-label">&#127916; Video — Casas 1 y 2</div>
+          <img className="casa-video" src={CABANAS[0].video} alt="Video Casas 1 y 2" />
+        </div>
+
+        {/* Cabina 3 */}
+        <CasaBlock casa={CABANAS[2]} />
+        <div className="casa-video-wrap">
+          <div className="casa-video-label">&#127916; Video — Casa 3</div>
+          <img className="casa-video" src={CABANAS[2].video} alt="Video Casa 3" />
+        </div>
+      </div>
     </section>
   )
 }
