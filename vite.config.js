@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  // GitHub Pages path
+  base: '/landing-page-la-beatriz/',
   // Sirve todo el root como archivos estáticos en dev (videos, fotos, logo)
   publicDir: '.',
   build: {
