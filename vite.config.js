@@ -5,15 +5,8 @@ export default defineConfig({
   plugins: [react()],
   // GitHub Pages path
   base: '/landing-page-la-beatriz/',
-  // Sirve todo el root como archivos estáticos en dev (videos, fotos, logo)
-  publicDir: '.',
-  build: {
-    outDir: 'dist',
-    copyPublicDir: false,  // no copiar los videos grandes al build
-  },
   server: {
-    host: true,   // accesible desde LAN → mobile/iOS/Android
+    host: true,
     port: 3000,
-    fs: { strict: false },
   },
 })
