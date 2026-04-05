@@ -43,10 +43,13 @@ const CABANAS = [
     video: import.meta.env.BASE_URL + 'video_cabana_3/video_cabana_3.gif',
     fotos: [
       { src: import.meta.env.BASE_URL + 'cabana_3/cabana_3 frente.jpg', alt: 'Frente' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/IMG-20260402-WA0028.jpg', alt: 'Vista General' },
       { src: import.meta.env.BASE_URL + 'cabana_3/ventana del living vista a verde cabana_3.jpg', alt: 'Vista Verde' },
       { src: import.meta.env.BASE_URL + 'cabana_3/living cabana_3.jpg', alt: 'Living' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/living cabana_3 (2).jpg', alt: 'Living 2' },
       { src: import.meta.env.BASE_URL + 'cabana_3/living sillon y tele cabana_3.jpg', alt: 'Living Sillón' },
       { src: import.meta.env.BASE_URL + 'cabana_3/comedor amplio cabana_3.jpg', alt: 'Comedor' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/comedor diario cabana_3.jpg', alt: 'Comedor 2' },
       { src: import.meta.env.BASE_URL + 'cabana_3/parrilla cabana_3.jpg', alt: 'Parrilla' },
       { src: import.meta.env.BASE_URL + 'cabana_3/dormitorio cabana_3.jpg', alt: 'Dormitorio' },
       { src: import.meta.env.BASE_URL + 'cabana_3/bano_ducha_espejo_cabana_3.jpg', alt: 'Baño' },
