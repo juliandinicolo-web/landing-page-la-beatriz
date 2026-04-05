@@ -1,7 +1,7 @@
 export default function Propiedad() {
   return (
     <section id="propiedad" className="propiedad-section">
-      <div className="propiedad-bg" style={{ backgroundImage: "url('/fotos_generales/20260329_115625.jpg')" }} />
+      <div className="propiedad-bg" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}fotos_generales/20260329_115625.jpg')` }} />
       <div className="propiedad-overlay" />
       <div className="propiedad-content">
         <div className="section-tag light">La Propiedad</div>

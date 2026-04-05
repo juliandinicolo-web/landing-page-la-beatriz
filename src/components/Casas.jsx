@@ -7,16 +7,16 @@ const CABANAS = [
     title: 'Casa de Montaña 1',
     desc: 'Construida en hormigón visto con acabados de diseño, esta casa combina la solidez de la piedra con la calidez de sus interiores. Techos de vigas de madera expuestas, pisos de cemento alisado y decoración cuidada crean un ambiente único e irrepetible.',
     amenities: ['Hasta 5 personas', '2 baños completos', 'WiFi Starlink', 'Smart TV en living y dormitorio', 'Parrilla & fogón privado', 'Cocina totalmente equipada', 'Living-comedor integrado', 'Hormigón visto + vigas de madera'],
-    video: '/video_cabana_1_2/video_cabanas_1_2.MP4',
+    video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.MP4',
     fotos: [
-      { src: '/fotos_generales/foto_patio_trasero_1_2.png', alt: 'Patio' },
-      { src: '/cabana_1/living cabana_1.jpg', alt: 'Living' },
-      { src: '/cabana_1/living sofa con vista verde cabana_1.jpg', alt: 'Sofa' },
-      { src: '/cabana_1/comedor diario cabana_1.jpg', alt: 'Comedor' },
-      { src: '/cabana_1/dormitorio cabana_1.jpg', alt: 'Dormitorio' },
-      { src: '/cabana_1/bano_completo.jpg', alt: 'Baño' },
-      { src: '/cabana_1/bano_espejo.jpg', alt: 'Baño Espejo' },
-      { src: '/cabana_1/terraza con parrilla y fogon cabana_1.jpg', alt: 'Terraza' }
+      { src: import.meta.env.BASE_URL + 'fotos_generales/foto_patio_trasero_1_2.png', alt: 'Patio' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/living cabana_1.jpg', alt: 'Living' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/living sofa con vista verde cabana_1.jpg', alt: 'Sofa' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/comedor diario cabana_1.jpg', alt: 'Comedor' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/dormitorio cabana_1.jpg', alt: 'Dormitorio' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/bano_completo.jpg', alt: 'Baño' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/bano_espejo.jpg', alt: 'Baño Espejo' },
+      { src: import.meta.env.BASE_URL + 'cabana_1/terraza con parrilla y fogon cabana_1.jpg', alt: 'Terraza' }
     ]
   },
   {
@@ -25,14 +25,14 @@ const CABANAS = [
     reverse: true,
     desc: 'Espacios amplios bañados de luz natural a través de grandes ventanales. El diseño industrial elegante fusiona hormigón, madera y metal para crear un refugio de montaña contemporáneo y sofisticado, pensado para el máximo confort.',
     amenities: ['Hasta 5 personas', '2 baños completos', 'WiFi Starlink', 'Smart TV en living y dormitorio', 'Parrilla & fogón privado', 'Ambientes amplios con luz natural', 'Diseño industrial moderno', 'Vista a la montaña'],
-    video: '/video_cabana_1_2/video_cabanas_1_2.MP4',
+    video: import.meta.env.BASE_URL + 'video_cabana_1_2/video_cabanas_1_2.MP4',
     fotos: [
-      { src: '/cabana_2/20260329_112259.jpg', alt: 'Living' },
-      { src: '/cabana_2/20260329_112342.jpg', alt: 'Comedor' },
-      { src: '/cabana_2/20260329_112540.jpg', alt: 'Cocina' },
-      { src: '/cabana_2/20260329_112649.jpg', alt: 'Habitación' },
-      { src: '/cabana_2/20260329_112740.jpg', alt: 'Detalle' },
-      { src: '/cabana_2/IMG-20251229-WA0056.jpg', alt: 'Exterior' }
+      { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112259.jpg', alt: 'Living' },
+      { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112342.jpg', alt: 'Comedor' },
+      { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112540.jpg', alt: 'Cocina' },
+      { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112649.jpg', alt: 'Habitación' },
+      { src: import.meta.env.BASE_URL + 'cabana_2/20260329_112740.jpg', alt: 'Detalle' },
+      { src: import.meta.env.BASE_URL + 'cabana_2/IMG-20251229-WA0056.jpg', alt: 'Exterior' }
     ]
   },
   {
@@ -40,15 +40,15 @@ const CABANAS = [
     title: 'Casa de Montaña 3',
     desc: 'La tercera propuesta arquitectónica del complejo. Misma filosofía de diseño: solidez, confort y estética contemporánea. Perfecta para grupos familiares o de amigos que buscan privacidad y exclusividad en la montaña.',
     amenities: ['Hasta 5 personas', '2 baños completos', 'WiFi Starlink', 'Smart TV en living y dormitorio', 'Parrilla & fogón privado', 'Privacidad total garantizada', 'Acceso independiente', '2 hectáreas compartidas'],
-    video: '/video_cabana_3/video_cabana_3.MP4',
+    video: import.meta.env.BASE_URL + 'video_cabana_3/video_cabana_3.MP4',
     fotos: [
-      { src: '/cabana_3/cabana_3 frente.jpg', alt: 'Frente' },
-      { src: '/cabana_3/living cabana_3.jpg', alt: 'Living' },
-      { src: '/cabana_3/living sillon y tele cabana_3.jpg', alt: 'Living Sillón' },
-      { src: '/cabana_3/comedor amplio cabana_3.jpg', alt: 'Comedor' },
-      { src: '/cabana_3/dormitorio cabana_3.jpg', alt: 'Dormitorio' },
-      { src: '/cabana_3/bano_ducha_espejo_cabana_3.jpg', alt: 'Baño' },
-      { src: '/cabana_3/parque y parrilla cabana_3.jpg', alt: 'Parque' }
+      { src: import.meta.env.BASE_URL + 'cabana_3/cabana_3 frente.jpg', alt: 'Frente' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/living cabana_3.jpg', alt: 'Living' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/living sillon y tele cabana_3.jpg', alt: 'Living Sillón' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/comedor amplio cabana_3.jpg', alt: 'Comedor' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/dormitorio cabana_3.jpg', alt: 'Dormitorio' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/bano_ducha_espejo_cabana_3.jpg', alt: 'Baño' },
+      { src: import.meta.env.BASE_URL + 'cabana_3/parque y parrilla cabana_3.jpg', alt: 'Parque' }
     ]
   }
 ]

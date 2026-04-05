@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 
 const SLIDES = [
-  '/fotos_generales/foto_caba%C3%B1as_panoramica.png',
-  '/fotos_generales/20260329_115625.jpg',
-  '/fotos_generales/20260329_115458.jpg',
-  '/fotos_generales/foto_caba%C3%B1as_1_2.png',
-  '/fotos_generales/foto_patio_trasero_1_2.png',
-  '/cabana_2/20260329_112259.jpg',
+  import.meta.env.BASE_URL + 'fotos_generales/foto_caba%C3%B1as_panoramica.png',
+  import.meta.env.BASE_URL + 'fotos_generales/20260329_115625.jpg',
+  import.meta.env.BASE_URL + 'fotos_generales/20260329_115458.jpg',
+  import.meta.env.BASE_URL + 'fotos_generales/foto_caba%C3%B1as_1_2.png',
+  import.meta.env.BASE_URL + 'fotos_generales/foto_patio_trasero_1_2.png',
+  import.meta.env.BASE_URL + 'cabana_2/20260329_112259.jpg',
 ]
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="hero-media">
         {/* Video panorámico — playsInline es clave para iOS */}
         <video className="hero-video-bg" autoPlay muted loop playsInline preload="auto">
-          <source src="/video_panoramico/video_panoramico.MP4" type="video/mp4" />
+          <source src={import.meta.env.BASE_URL + "video_panoramico/video_panoramico.MP4"} type="video/mp4" />
         </video>
         <div className="hero-slides">
           {SLIDES.map((src, i) => (

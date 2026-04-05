@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
       <div className="nav-inner">
         <a href="#hero" className="nav-logo">
-          <img src="/logo_la_beatriz.jpg" alt="La Beatriz Casas de Montaña" id="nav-logo-img" />
+          <img src={import.meta.env.BASE_URL + "logo_la_beatriz.jpg"} alt="La Beatriz Casas de Montaña" id="nav-logo-img" />
         </a>
         <ul className={`nav-links${open ? ' open' : ''}`} id="nav-links-list">
           <li><a href="#casas"     onClick={close}>Las Casas</a></li>

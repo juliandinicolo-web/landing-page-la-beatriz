@@ -19,7 +19,7 @@ export default function Contacto() {
         ctx.drawImage(img, 0, 0)
         setLogoBase64(canvas.toDataURL('image/jpeg', 0.85))
       }
-      img.src = '/logo_la_beatriz.jpg'
+      img.src = import.meta.env.BASE_URL + 'logo_la_beatriz.jpg'
     } catch (e) {
       console.warn('Logo no disponible para PDF (CORS):', e)
     }

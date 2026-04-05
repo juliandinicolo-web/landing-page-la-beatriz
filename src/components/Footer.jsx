@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-logo">
-          <img src="/logo_la_beatriz.jpg" alt="La Beatriz Casas de Montaña" />
+          <img src={import.meta.env.BASE_URL + "logo_la_beatriz.jpg"} alt="La Beatriz Casas de Montaña" />
         </div>
         <div className="footer-text">
           <p><strong>La Beatriz — Casas de Montaña</strong></p>

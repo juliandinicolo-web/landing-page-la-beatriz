@@ -13,7 +13,7 @@ export default function Ubicacion() {
             <span className="ruta-badge">&#x1F6E3;&#xFE0F; RUTA NACIONAL 7 KM 1141,5</span>
           </div>
           <video className="ruta-video" autoPlay muted loop playsInline preload="metadata">
-            <source src="/video_panoramico/ruta_nacional_7.MP4" type="video/mp4" />
+            <source src={import.meta.env.BASE_URL + "video_panoramico/ruta_nacional_7.MP4"} type="video/mp4" />
           </video>
           <iframe
             id="mapa-labeatriz"
